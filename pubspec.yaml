@@ -49,6 +49,7 @@ dependencies:
   google_fonts: ^6.1.0
   lottie: ^1.4.2
   unique_identifier: ^0.3.0
+  dropdown_search: ^5.0.6
 
 dev_dependencies:
   flutter_test:

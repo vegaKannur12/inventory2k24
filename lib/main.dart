@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:inventory24/CONTROLLER/controller.dart';
 import 'package:inventory24/SCEENS/AUTHENTICATION/login.dart';
 import 'package:inventory24/SCEENS/AUTHENTICATION/registration.dart';
@@ -8,6 +9,12 @@ import 'package:provider/provider.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+   SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight
+  ]);
   runApp(
     MultiProvider(
       providers: [
@@ -32,10 +39,10 @@ class MyApp extends StatelessWidget {
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
         // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
+        // try changing the seedColor in the colorScheme below to Colors.greenr
         // and then invoke "hot reload" (save your changes or press the "hot
         // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
+        // the command line to start the app).rr
         //
         // Notice that the counter didn't reset back to zero; the application
         // state is not lost during the reload. To reset the state, use hot
@@ -47,10 +54,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home:
-          // HomePage(),
-          // LoginPage()
+           HomePage(),
+          // LoginPage(),
           // Registration(),
-          const SplashScreen(),
+          // const SplashScreen(),
     );
   }
 }
